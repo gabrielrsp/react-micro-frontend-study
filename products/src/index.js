@@ -1,12 +1,9 @@
-import faker from 'faker'
+import('./bootstrap'); //chamada assincrona do bootstrap
+/* 
+  O import nesse formato de função irá carregar o bootstrap assincronamente
+  permitindo o webpack identificar quais arquivos o codigo do index.js requer para rodar normalmente
 
-let products = '';
 
-for (let i = 0; i<5; i++) {
-  const name = faker.commerce.productName();
-  products += `<div>${name}</div>`;
-}
-
-// console.log(products)
-
-document.querySelector('#dev-products').innerHTML = products; // atribuindo products 
+  dessa forma com o webpack conseguindo identificar as necessidades de imports de lib, antes de rodar o codigo 
+  ele webpack vai poder carregar as libs antes de executar o codigo de fato.
+*/

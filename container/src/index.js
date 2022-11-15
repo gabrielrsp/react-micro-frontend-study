@@ -1,5 +1,4 @@
-import('./bootstrap');
-
+import('./bootstrap'); 
 
 /* 
 Antes de executar o arquivo boostrap.js, é preciso fazer o fetch do projeto 'products', logo
