@@ -1,4 +1,5 @@
-import 'products/ProductsIndex';
+import { mount as productsMount } from 'products/ProductsIndex';
+import { mount as cartMount } from 'cart/CartShow';
 import 'cart/CartShow';
 /* 
 Quando o conteúdo desse arquivo é executado, presume-se que teremos acesso 
@@ -8,4 +9,5 @@ Por isso o index.js é executado primeiro para garantir que todos os codigos for
 
 */
 
-console.log('Container!');
+productsMount(document.querySelector('#my-products'))
+cartMount(document.querySelector('#my-cart'))
