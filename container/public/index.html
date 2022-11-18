@@ -6,3 +6,15 @@
     <div id="my-cart"></div>
   </body>
 </html>
+
+<!-- 
+  OBS: ao definir um id para um elemento, é criado no browser, uma variável global
+  com o nome desse id.
+
+  portanto, cuidado ao definir o nome do id do elemento, para nao ser o mesmo nome do pacote do subprojeto
+  fornecido pelo webpack, ao qual também recebe uma referencia no browser a uma variável global de mesmo nome.
+
+  essa variável com mesmo nome setada pelo webpack é criada pelo arquivo remoteEntry 
+  essa variavel contem um objeto com funcoes get, init que servem como interface para acesso ao codigo que vem dentro 
+  do arquivo remoteEntry
+ -->
